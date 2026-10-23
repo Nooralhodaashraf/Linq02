@@ -199,7 +199,53 @@ namespace Linq02
             //Console.WriteLine(result);//any way there is more than 500
             #endregion
 
+            #region 18. Generate a multiplication table row for 7 
+            //var result = Enumerable.Range(1, 10)
+            //           .Select(n => $"7 x {n} = {7 * n}");
 
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+            #endregion
+
+            #region 19. Generate even numbers between 1 and 30. 
+
+            //var result = Enumerable.Range(1, 30)
+            //                       .Where(n => n % 2 == 0);
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+            #endregion
+
+            #region 20. Concatenate the first 3 product names with the first  3 customer names into a single sequence.
+
+            //var result = ProductList.Take(3).Select(p => p.ProductName).Concat(CustomerList.Take(3).Select(c => c.CustomerName) );
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region 21. Pair each product with a customer (by position)  and produce  a string "ProductName sold to CompanyName".
+            // والله مفيش شركات ف الحوار كله ف غيرته لاسم العميل وخلاص
+
+            //var result = ProductList
+            //    .Zip(CustomerList, (p, c) => $"{p.ProductName} sold to {c.CustomerName}");
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
 
             //Console.WriteLine("================================================");
 
