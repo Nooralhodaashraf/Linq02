@@ -1,4 +1,5 @@
 ﻿using Linq02.Models;
+using System.Diagnostics.Metrics;
 
 namespace Linq02
 {
@@ -8,6 +9,7 @@ namespace Linq02
         {
 
             var ProductList = DataSources.Source.ProductList;
+            var CustomerList = DataSources.Source.CustomerList;
 
             #region 1. Get top 3 most expensive products 
             //var result = ProductList.OrderByDescending(p => p.UnitPrice).Take(3);
@@ -79,8 +81,47 @@ namespace Linq02
             //        Console.WriteLine(item.ProductName);
             //    }
             //}
+
             #endregion
 
+            #region 8. Find all categories that have MORE THAN 3 products 
+            //var result = ProductList.GroupBy(P => P.Category)
+            //                        .Where(G => G.Count() > 3)
+            //                        .Select(G => new
+            //                        {
+            //                            CategoryName = G.Key,
+            //                            CountOfProducts = G.Count()
+            //                        });
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine($"{item.CategoryName}  count: {item.CountOfProducts} ");
+            //}
+
+
+            #endregion
+
+            #region 9. Using QUERY SYNTAX, group customers by Country, and for  each  group select { Country, Count, TotalOrderValue }.
+            //var QueryCustomers = from C in CustomerList
+            //                     group C by C.Country
+            //             into Countries
+            //                     select new
+            //                     {
+            //                         CountryName = Countries.Key,
+            //                         CountOfCustomers = Countries.Count(),
+            //                         TotalOrderValue = Countries.Sum(C => C.Orders.Sum(O => O.Total))
+            //                     };
+
+            //foreach (var item in QueryCustomers)
+            //{
+            //    Console.WriteLine($"{item.CountryName}: {item.CountOfCustomers} customers, Total Order Value: {item.TotalOrderValue}");
+            
+
+            //}
+
+
+
+            #endregion
             //Console.WriteLine("================================================");
 
             //foreach (var item in ProductList)
