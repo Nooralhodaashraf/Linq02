@@ -1,5 +1,6 @@
 ﻿using Linq02.Models;
 using System.Diagnostics.Metrics;
+using System.Drawing;
 
 namespace Linq02
 {
@@ -115,13 +116,91 @@ namespace Linq02
             //foreach (var item in QueryCustomers)
             //{
             //    Console.WriteLine($"{item.CountryName}: {item.CountOfCustomers} customers, Total Order Value: {item.TotalOrderValue}");
-            
+
 
             //}
 
 
 
             #endregion
+
+            #region 10. Calculate the total number of units in stock across all products 
+            //var result = ProductList.Sum(p => p.UnitsInStock);
+
+            //            Console.WriteLine(result);
+
+
+            #endregion
+
+            #region 11. Find the CHEAPEST and MOST EXPENSIVE product prices 
+            //var cheapistProduct = ProductList.MinBy(p => p.UnitPrice);
+            //var mostExpensiveProduct = ProductList.MaxBy(p => p.UnitPrice);
+
+            //Console.WriteLine($"Cheapest Product Price: {cheapistProduct}");
+            //Console.WriteLine($"Most Expensive Product Price: {mostExpensiveProduct}");
+
+            #endregion
+
+            #region 12. Get a distinct list of all product categories
+
+            //var result = ProductList.Select(p => p.Category).Distinct();
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+            #region 13. find product IDs that are in setA but NOT in setB 
+            //int[] setA = { 1, 3, 5, 7, 9, 11, 13 };
+            //int[] setB = { 3, 6, 9, 12, 15, 13 };
+
+            //var result = setA.Except(setB);
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+
+            //}
+
+            #endregion
+
+            #region 14. Find countries that  appear in list1 but NOT in list2   (case -insensitive). 
+            //string[] list1 = { "Germany", "France", "UK", "Spain" };
+            //string[] list2 = { "france", "SPAIN", "Italy" };
+
+            //var result = list1.Except(list2 , StringComparer.OrdinalIgnoreCase);
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region 15. Build a Dictionary<int, Product> keyed by ProductID. Then  retrieve and print the product with ID = 18.
+            //var result = ProductList.ToDictionary(p => p.ProductID );
+
+            //if (result.TryGetValue(18, out var product))
+            //{
+            //    Console.WriteLine(product);
+            //}
+            #endregion
+
+            #region 16. Get the first product whose price is greater than $50. 
+            //var result = ProductList.Where(P => P.UnitPrice > 50).First();
+
+            //            Console.WriteLine(result);
+            #endregion
+
+            #region 17. Try to get the first product with a price > $500.  it returns null instead of throwing.
+            //var result = ProductList.Where(P => P.UnitPrice > 500).FirstOrDefault();
+
+            //Console.WriteLine(result);//any way there is more than 500
+            #endregion
+
+
+
             //Console.WriteLine("================================================");
 
             //foreach (var item in ProductList)
