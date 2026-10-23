@@ -41,6 +41,12 @@ namespace Linq02
 
             #endregion
 
+            #region 4. Check if ALL products in the "Seafood" category are in stock 
+            //var result= ProductList.All(p => p.Category == "Seafood");
+            //Console.WriteLine(result);
+
+            #endregion
+
 
             //Console.WriteLine("================================================");
 
