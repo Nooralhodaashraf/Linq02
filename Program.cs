@@ -57,14 +57,24 @@ namespace Linq02
 
             #endregion
 
-            //Console.WriteLine("================================================");
+            #region 6. Group all products by Category and print each group  with its product count.
+            // var result = ProductList.GroupBy(P => P.Category);
 
-            //foreach (var item in ProductList)
+            //foreach (var group in result)
             //{
-            //    Console.WriteLine(item);
+            //    Console.WriteLine($"    [{group.Key}]  ({group.Count()} products)");
             //}
-            //Console.WriteLine("================================================");
 
-        }
+            #endregion
+
+                //Console.WriteLine("================================================");
+
+                //foreach (var item in ProductList)
+                //{
+                //    Console.WriteLine(item);
+                //}
+                //Console.WriteLine("================================================");
+
+            }
     }
 }
