@@ -67,14 +67,28 @@ namespace Linq02
 
             #endregion
 
-                //Console.WriteLine("================================================");
+            #region 7. Group products by Category and project only product names  per  group
 
-                //foreach (var item in ProductList)
-                //{
-                //    Console.WriteLine(item);
-                //}
-                //Console.WriteLine("================================================");
+            //var result = ProductList.GroupBy(P => P.Category);
 
-            }
+            //foreach (var group in result)
+            //{
+            //    Console.WriteLine($"    [{group.Key}]  ");
+            //    foreach (var item in group)
+            //    {
+            //        Console.WriteLine(item.ProductName);
+            //    }
+            //}
+            #endregion
+
+            //Console.WriteLine("================================================");
+
+            //foreach (var item in ProductList)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //Console.WriteLine("================================================");
+
+        }
     }
 }
