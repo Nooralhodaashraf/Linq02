@@ -19,6 +19,16 @@
             #endregion
 
 
+            #region 2. show page 2 of products, with page size = 5 
+           //var results= ProductList.Skip(5).Take(5);
+
+           // foreach (var item in results)
+           // {
+           //     Console.WriteLine(item);
+           // }
+
+
+            #endregion
 
 
 
