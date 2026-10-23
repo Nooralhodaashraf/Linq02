@@ -47,6 +47,15 @@ namespace Linq02
 
             #endregion
 
+            #region 5. Check if the ID list contains 9 
+
+            //int[] ids = { 3, 9, 13, 18 };
+
+            //var result = ids.Single(p=> p == 9);
+            //Console.WriteLine(result);
+
+
+            #endregion
 
             //Console.WriteLine("================================================");
 
