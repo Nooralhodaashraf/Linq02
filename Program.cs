@@ -1,4 +1,6 @@
-﻿namespace Linq02
+﻿using Linq02.Models;
+
+namespace Linq02
 {
     internal class Program
     {
@@ -18,18 +20,26 @@
 
             #endregion
 
-
             #region 2. show page 2 of products, with page size = 5 
-           //var results= ProductList.Skip(5).Take(5);
+            //var results= ProductList.Skip(5).Take(5);
 
-           // foreach (var item in results)
-           // {
-           //     Console.WriteLine(item);
-           // }
+            // foreach (var item in results)
+            // {
+            //     Console.WriteLine(item);
+            // }
 
 
             #endregion
 
+            #region 3. Take products from the list as long as Their UnitPrice is less than $25(list is ordered by price).
+            //var result = ProductList.OrderBy(p => p.UnitPrice).TakeWhile(p => p.UnitPrice < 25); 
+
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
 
 
             //Console.WriteLine("================================================");
